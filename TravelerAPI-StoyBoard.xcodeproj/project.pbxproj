@@ -56,15 +56,47 @@
 		0E86FA92291F45070034B97E /* TravelerAPI-StoyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				0E86FA93291F45070034B97E /* AppDelegate.swift */,
-				0E86FA95291F45070034B97E /* SceneDelegate.swift */,
-				0E86FA97291F45070034B97E /* ViewController.swift */,
-				0E86FA99291F45080034B97E /* Main.storyboard */,
+				0E86FAAA291F454D0034B97E /* Supporting Files */,
+				0E86FAA9291F45460034B97E /* Controller */,
+				0E86FAA8291F45420034B97E /* View */,
+				0E86FAA7291F45350034B97E /* Model */,
 				0E86FA9C291F45080034B97E /* Assets.xcassets */,
-				0E86FA9E291F45080034B97E /* LaunchScreen.storyboard */,
 				0E86FAA1291F45080034B97E /* Info.plist */,
 			);
 			path = "TravelerAPI-StoyBoard";
+			sourceTree = "<group>";
+		};
+		0E86FAA7291F45350034B97E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E86FAA8291F45420034B97E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E86FA9E291F45080034B97E /* LaunchScreen.storyboard */,
+				0E86FA99291F45080034B97E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E86FAA9291F45460034B97E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E86FA97291F45070034B97E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E86FAAA291F454D0034B97E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E86FA95291F45070034B97E /* SceneDelegate.swift */,
+				0E86FA93291F45070034B97E /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
