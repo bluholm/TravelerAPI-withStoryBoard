@@ -17,6 +17,8 @@
 		0EA30918291F56550096C4FA /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA30917291F56550096C4FA /* CurrencyViewController.swift */; };
 		0EA3091A291F70710096C4FA /* TranslateLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA30919291F70710096C4FA /* TranslateLogic.swift */; };
 		0EA3091C291F73C40096C4FA /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091B291F73C40096C4FA /* Translate.swift */; };
+		0EA3091E291F94C90096C4FA /* URLEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091D291F94C90096C4FA /* URLEncodable.swift */; };
+		0EA30920291F97930096C4FA /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091F291F97930096C4FA /* TranslateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0EA30917291F56550096C4FA /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		0EA30919291F70710096C4FA /* TranslateLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateLogic.swift; sourceTree = "<group>"; };
 		0EA3091B291F73C40096C4FA /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
+		0EA3091D291F94C90096C4FA /* URLEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodable.swift; sourceTree = "<group>"; };
+		0EA3091F291F97930096C4FA /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				0EA30919291F70710096C4FA /* TranslateLogic.swift */,
 				0EA3091B291F73C40096C4FA /* Translate.swift */,
+				0EA3091D291F94C90096C4FA /* URLEncodable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			children = (
 				0E86FA9E291F45080034B97E /* LaunchScreen.storyboard */,
 				0E86FA99291F45080034B97E /* Main.storyboard */,
+				0EA3091F291F97930096C4FA /* TranslateView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,10 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EA30918291F56550096C4FA /* CurrencyViewController.swift in Sources */,
+				0EA30920291F97930096C4FA /* TranslateView.swift in Sources */,
 				0EA30916291F564B0096C4FA /* WeatherViewController.swift in Sources */,
 				0EA3091A291F70710096C4FA /* TranslateLogic.swift in Sources */,
 				0EA3091C291F73C40096C4FA /* Translate.swift in Sources */,
 				0EA30914291F563F0096C4FA /* TranslateViewController.swift in Sources */,
+				0EA3091E291F94C90096C4FA /* URLEncodable.swift in Sources */,
 				0E86FA94291F45070034B97E /* AppDelegate.swift in Sources */,
 				0E86FA96291F45070034B97E /* SceneDelegate.swift in Sources */,
 			);
