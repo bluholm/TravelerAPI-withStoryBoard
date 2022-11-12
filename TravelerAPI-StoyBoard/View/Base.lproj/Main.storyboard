@@ -1,24 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hjv-4U-fY6">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Translate-->
+        <scene sceneID="F7c-WH-fEQ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BBU-to-b2g" customClass="TranslateViewController" customModule="TravelerAPI_StoyBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GnR-0w-dT1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1f-Rt-2AB">
+                                <rect key="frame" x="8" y="388" width="81" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text will be translated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdJ-fb-dNt">
+                                <rect key="frame" x="8" y="429" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="sjH-q7-yuu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray3Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJd-3J-N6k">
+                                <rect key="frame" x="8" y="653" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3iF-oy-3zt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Translate">
+                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                    <color key="baseBackgroundColor" red="0.22745099660000001" green="0.51372551919999998" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didButtonTranslateTapped:" destination="BBU-to-b2g" eventType="touchUpInside" id="W8p-6p-6Pd"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NrU-Fv-eWJ">
+                                <rect key="frame" x="8" y="172" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="t7g-Q3-9Lm"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="French" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAR-ZE-tXw">
+                                <rect key="frame" x="8" y="131" width="75" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RJd-70-Glk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NdJ-fb-dNt" firstAttribute="leading" secondItem="RJd-70-Glk" secondAttribute="leading" constant="8" id="5Zn-AE-YxB"/>
+                            <constraint firstItem="DJd-3J-N6k" firstAttribute="leading" secondItem="RJd-70-Glk" secondAttribute="leading" constant="8" id="Csh-HS-1Is"/>
+                            <constraint firstItem="NdJ-fb-dNt" firstAttribute="top" secondItem="J1f-Rt-2AB" secondAttribute="bottom" constant="8" id="G8h-MG-TcA"/>
+                            <constraint firstItem="J1f-Rt-2AB" firstAttribute="leading" secondItem="RJd-70-Glk" secondAttribute="leading" constant="8" id="JXu-cd-MsM"/>
+                            <constraint firstItem="RJd-70-Glk" firstAttribute="trailing" secondItem="NdJ-fb-dNt" secondAttribute="trailing" constant="8" id="JlZ-W4-Riz"/>
+                            <constraint firstItem="NrU-Fv-eWJ" firstAttribute="leading" secondItem="RJd-70-Glk" secondAttribute="leading" constant="8" id="Rbv-k0-Kck"/>
+                            <constraint firstItem="RJd-70-Glk" firstAttribute="bottom" secondItem="DJd-3J-N6k" secondAttribute="bottom" constant="48" id="apz-la-dQF"/>
+                            <constraint firstItem="DJd-3J-N6k" firstAttribute="top" secondItem="NdJ-fb-dNt" secondAttribute="bottom" constant="24" id="ddH-FH-WZ0"/>
+                            <constraint firstItem="J1f-Rt-2AB" firstAttribute="top" secondItem="NrU-Fv-eWJ" secondAttribute="bottom" constant="16" id="oE2-hI-DBM"/>
+                            <constraint firstItem="RJd-70-Glk" firstAttribute="trailing" secondItem="DJd-3J-N6k" secondAttribute="trailing" constant="8" id="rpm-0m-JJg"/>
+                            <constraint firstItem="RJd-70-Glk" firstAttribute="trailing" secondItem="NrU-Fv-eWJ" secondAttribute="trailing" constant="8" id="zbp-j3-5mi"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Translate" id="olm-R7-SGF">
+                        <imageReference key="image" image="quote.bubble.fill" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" red="0.79827183489999998" green="0.34645067559999998" blue="0.51861280409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="buttonTranslate" destination="DJd-3J-N6k" id="mne-JY-mbN"/>
+                        <outlet property="labelTextField" destination="NrU-Fv-eWJ" id="HIK-Kb-ku4"/>
+                        <outlet property="labelTextTranslated" destination="NdJ-fb-dNt" id="brY-hN-KF9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tRW-q1-sUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-229" y="-808"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="nTy-ba-Xa7">
+            <objects>
+                <viewController id="niS-yI-DZf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ned-vg-W6c">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YAh-ac-EfI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Currency" image="dollarsign.square.fill" catalog="system" id="h8P-hO-SQh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="job-Kf-HKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="607"/>
+        </scene>
+        <!--Weather-->
+        <scene sceneID="ZqX-4X-JpP">
+            <objects>
+                <viewController id="TwH-in-EPB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IUr-M0-t88">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wg9-j4-eIB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weather" image="cloud.rain.fill" catalog="system" id="naf-sp-U6L"/>
+                    <navigationItem key="navigationItem" id="pgV-Ap-gbs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKY-H1-tVX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="-98"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qQb-uS-H7v">
+            <objects>
+                <tabBarController id="hjv-4U-fY6" customClass="ViewController" customModule="TravelerAPI_StoyBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="04O-JW-1a6">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.62745100259999997" green="0.32941177490000001" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.22745099660000001" green="0.51372551919999998" blue="0.62745100259999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BBU-to-b2g" kind="relationship" relationship="viewControllers" id="6CM-7K-hOG"/>
+                        <segue destination="niS-yI-DZf" kind="relationship" relationship="viewControllers" id="FGq-4a-qMa"/>
+                        <segue destination="TwH-in-EPB" kind="relationship" relationship="viewControllers" id="Bfd-SS-Edl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yq9-Kf-Y4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1666" y="-380"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud.rain.fill" catalog="system" width="126" height="128"/>
+        <image name="dollarsign.square.fill" catalog="system" width="128" height="114"/>
+        <image name="quote.bubble.fill" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
