@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1AFDD72924EBA500451C9D /* SymbolsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AFDD62924EBA500451C9D /* SymbolsStruct.swift */; };
+		0E1AFDD92924F22A00451C9D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AFDD82924F22A00451C9D /* Error.swift */; };
+		0E458A7E2921CCAF00EE7EBA /* SymbolsViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E458A7D2921CCAF00EE7EBA /* SymbolsViewCotroller.swift */; };
+		0E458A802921D2E400EE7EBA /* CurrencyLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E458A7F2921D2E400EE7EBA /* CurrencyLogic.swift */; };
+		0E458AB529232FD100EE7EBA /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E458AB429232FD100EE7EBA /* Symbols.swift */; };
 		0E86FA94291F45070034B97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E86FA93291F45070034B97E /* AppDelegate.swift */; };
 		0E86FA96291F45070034B97E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E86FA95291F45070034B97E /* SceneDelegate.swift */; };
 		0E86FA9B291F45080034B97E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E86FA99291F45080034B97E /* Main.storyboard */; };
@@ -16,12 +21,17 @@
 		0EA30916291F564B0096C4FA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA30915291F564B0096C4FA /* WeatherViewController.swift */; };
 		0EA30918291F56550096C4FA /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA30917291F56550096C4FA /* CurrencyViewController.swift */; };
 		0EA3091A291F70710096C4FA /* TranslateLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA30919291F70710096C4FA /* TranslateLogic.swift */; };
-		0EA3091C291F73C40096C4FA /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091B291F73C40096C4FA /* Translate.swift */; };
+		0EA3091C291F73C40096C4FA /* TranslateStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091B291F73C40096C4FA /* TranslateStructs.swift */; };
 		0EA3091E291F94C90096C4FA /* URLEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091D291F94C90096C4FA /* URLEncodable.swift */; };
 		0EA30920291F97930096C4FA /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA3091F291F97930096C4FA /* TranslateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1AFDD62924EBA500451C9D /* SymbolsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsStruct.swift; sourceTree = "<group>"; };
+		0E1AFDD82924F22A00451C9D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		0E458A7D2921CCAF00EE7EBA /* SymbolsViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewCotroller.swift; sourceTree = "<group>"; };
+		0E458A7F2921D2E400EE7EBA /* CurrencyLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLogic.swift; sourceTree = "<group>"; };
+		0E458AB429232FD100EE7EBA /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		0E86FA90291F45070034B97E /* TravelerAPI-StoyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TravelerAPI-StoyBoard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E86FA93291F45070034B97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E86FA95291F45070034B97E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +43,7 @@
 		0EA30915291F564B0096C4FA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0EA30917291F56550096C4FA /* CurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		0EA30919291F70710096C4FA /* TranslateLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateLogic.swift; sourceTree = "<group>"; };
-		0EA3091B291F73C40096C4FA /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
+		0EA3091B291F73C40096C4FA /* TranslateStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateStructs.swift; sourceTree = "<group>"; };
 		0EA3091D291F94C90096C4FA /* URLEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodable.swift; sourceTree = "<group>"; };
 		0EA3091F291F97930096C4FA /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +59,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E458AB329232B5600EE7EBA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0EA3091B291F73C40096C4FA /* TranslateStructs.swift */,
+				0EA3091D291F94C90096C4FA /* URLEncodable.swift */,
+				0E458AB429232FD100EE7EBA /* Symbols.swift */,
+				0E1AFDD62924EBA500451C9D /* SymbolsStruct.swift */,
+				0E1AFDD82924F22A00451C9D /* Error.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0E86FA87291F45070034B97E = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +90,13 @@
 		0E86FA92291F45070034B97E /* TravelerAPI-StoyBoard */ = {
 			isa = PBXGroup;
 			children = (
-				0E86FAAA291F454D0034B97E /* Supporting Files */,
+				0E458AB329232B5600EE7EBA /* Helpers */,
 				0E86FAA9291F45460034B97E /* Controller */,
 				0E86FAA8291F45420034B97E /* View */,
 				0E86FAA7291F45350034B97E /* Model */,
 				0E86FA9C291F45080034B97E /* Assets.xcassets */,
 				0E86FAA1291F45080034B97E /* Info.plist */,
+				0E86FAAA291F454D0034B97E /* Supporting Files */,
 			);
 			path = "TravelerAPI-StoyBoard";
 			sourceTree = "<group>";
@@ -82,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				0EA30919291F70710096C4FA /* TranslateLogic.swift */,
-				0EA3091B291F73C40096C4FA /* Translate.swift */,
-				0EA3091D291F94C90096C4FA /* URLEncodable.swift */,
+				0E458A7F2921D2E400EE7EBA /* CurrencyLogic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,6 +126,7 @@
 				0EA30913291F563F0096C4FA /* TranslateViewController.swift */,
 				0EA30915291F564B0096C4FA /* WeatherViewController.swift */,
 				0EA30917291F56550096C4FA /* CurrencyViewController.swift */,
+				0E458A7D2921CCAF00EE7EBA /* SymbolsViewCotroller.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,10 +215,15 @@
 				0EA30920291F97930096C4FA /* TranslateView.swift in Sources */,
 				0EA30916291F564B0096C4FA /* WeatherViewController.swift in Sources */,
 				0EA3091A291F70710096C4FA /* TranslateLogic.swift in Sources */,
-				0EA3091C291F73C40096C4FA /* Translate.swift in Sources */,
+				0E1AFDD72924EBA500451C9D /* SymbolsStruct.swift in Sources */,
+				0EA3091C291F73C40096C4FA /* TranslateStructs.swift in Sources */,
+				0E458A7E2921CCAF00EE7EBA /* SymbolsViewCotroller.swift in Sources */,
 				0EA30914291F563F0096C4FA /* TranslateViewController.swift in Sources */,
 				0EA3091E291F94C90096C4FA /* URLEncodable.swift in Sources */,
 				0E86FA94291F45070034B97E /* AppDelegate.swift in Sources */,
+				0E458AB529232FD100EE7EBA /* Symbols.swift in Sources */,
+				0E458A802921D2E400EE7EBA /* CurrencyLogic.swift in Sources */,
+				0E1AFDD92924F22A00451C9D /* Error.swift in Sources */,
 				0E86FA96291F45070034B97E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
