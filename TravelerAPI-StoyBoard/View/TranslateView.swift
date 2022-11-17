@@ -13,11 +13,10 @@ extension TranslateViewController {
     
     //MARK: Accessible
     func loadMyView() {
-        labelTextField.layer.cornerRadius = 8
-        labelTextTranslated.layer.cornerRadius = 8
+        labelTextField.layer.cornerRadius = 10
+        labelTextTranslated.layer.cornerRadius = 10
         labelTextTranslated.isEditable = false
     }
-    
     
 }
 
