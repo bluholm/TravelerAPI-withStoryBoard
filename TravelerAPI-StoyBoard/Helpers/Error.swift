@@ -11,3 +11,13 @@ enum NetworkError: Error {
     case StatusCode200
     case decoderJSON
 }
+
+
+final class TypeError {
+    static let badUrl = "url seems to be incorrect"
+    static let decoderJSON = "decoder JSon not working"
+    static let StatusCode200 = "error status code HTTPRequest not working"
+    static let ErrorNil = "error Nil"
+    static let AmountConversion = "Amount impossible to convert"
+    static let AmountIncorrect = "Amount Incorrect"
+}

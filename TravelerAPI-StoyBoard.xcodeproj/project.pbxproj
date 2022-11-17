@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E1AFDD72924EBA500451C9D /* SymbolsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AFDD62924EBA500451C9D /* SymbolsStruct.swift */; };
 		0E1AFDD92924F22A00451C9D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1AFDD82924F22A00451C9D /* Error.swift */; };
+		0E3FF1A82925FC5300140DB1 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FF1A72925FC5300140DB1 /* AlertExtension.swift */; };
 		0E458A7E2921CCAF00EE7EBA /* SymbolsViewCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E458A7D2921CCAF00EE7EBA /* SymbolsViewCotroller.swift */; };
 		0E458A802921D2E400EE7EBA /* CurrencyLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E458A7F2921D2E400EE7EBA /* CurrencyLogic.swift */; };
 		0E458AB529232FD100EE7EBA /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E458AB429232FD100EE7EBA /* Symbols.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		0E1AFDD62924EBA500451C9D /* SymbolsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsStruct.swift; sourceTree = "<group>"; };
 		0E1AFDD82924F22A00451C9D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		0E3FF1A72925FC5300140DB1 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		0E458A7D2921CCAF00EE7EBA /* SymbolsViewCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewCotroller.swift; sourceTree = "<group>"; };
 		0E458A7F2921D2E400EE7EBA /* CurrencyLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyLogic.swift; sourceTree = "<group>"; };
 		0E458AB429232FD100EE7EBA /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				0E86FA9C291F45080034B97E /* Assets.xcassets */,
 				0E86FAA1291F45080034B97E /* Info.plist */,
 				0E86FAAA291F454D0034B97E /* Supporting Files */,
+				0E3FF1A72925FC5300140DB1 /* AlertExtension.swift */,
 			);
 			path = "TravelerAPI-StoyBoard";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				0EA30914291F563F0096C4FA /* TranslateViewController.swift in Sources */,
 				0EA3091E291F94C90096C4FA /* URLEncodable.swift in Sources */,
 				0E86FA94291F45070034B97E /* AppDelegate.swift in Sources */,
+				0E3FF1A82925FC5300140DB1 /* AlertExtension.swift in Sources */,
 				0E458AB529232FD100EE7EBA /* Symbols.swift in Sources */,
 				0E458A802921D2E400EE7EBA /* CurrencyLogic.swift in Sources */,
 				0E1AFDD92924F22A00451C9D /* Error.swift in Sources */,

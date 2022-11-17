@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hjv-4U-fY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hjv-4U-fY6">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -110,7 +110,7 @@
                                     <constraint firstAttribute="height" constant="60" id="AMa-ey-gTP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fto-a8-WiV">
                                 <rect key="frame" x="323" y="267.66666666666669" width="35" height="24"/>
@@ -147,22 +147,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9u-9C-tGL">
-                                <rect key="frame" x="324" y="407.66666666666669" width="34" height="23.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9u-9C-tGL">
+                                <rect key="frame" x="314" y="407.66666666666669" width="44" height="24"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TWm-jl-FDc">
+                                <rect key="frame" x="185" y="503" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAh-ac-EfI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="0Rm-QZ-s1F" firstAttribute="top" secondItem="92S-tQ-Hch" secondAttribute="bottom" constant="80" id="2ld-fQ-za5"/>
                             <constraint firstItem="YAh-ac-EfI" firstAttribute="trailing" secondItem="0Rm-QZ-s1F" secondAttribute="trailing" constant="16" id="AWp-F1-iBc"/>
                             <constraint firstItem="YAh-ac-EfI" firstAttribute="trailing" secondItem="N9u-9C-tGL" secondAttribute="trailing" constant="32" id="F5f-ha-nlj"/>
                             <constraint firstItem="B20-SK-mK4" firstAttribute="top" secondItem="0Rm-QZ-s1F" secondAttribute="bottom" constant="100" id="J5N-Rc-zra"/>
                             <constraint firstItem="92S-tQ-Hch" firstAttribute="leading" secondItem="YAh-ac-EfI" secondAttribute="leading" constant="16" id="K3D-ap-GzU"/>
-                            <constraint firstItem="N9u-9C-tGL" firstAttribute="leading" secondItem="YAh-ac-EfI" secondAttribute="leading" constant="324" id="Ntl-9W-Sae"/>
+                            <constraint firstItem="N9u-9C-tGL" firstAttribute="leading" secondItem="YAh-ac-EfI" secondAttribute="leading" constant="314" id="Ntl-9W-Sae"/>
                             <constraint firstItem="YAh-ac-EfI" firstAttribute="trailing" secondItem="t3N-sV-5S3" secondAttribute="trailing" constant="16" id="PpL-nC-Ift"/>
                             <constraint firstItem="t3N-sV-5S3" firstAttribute="top" secondItem="B20-SK-mK4" secondAttribute="bottom" constant="130" id="U3P-WL-5FK"/>
                             <constraint firstItem="0Rm-QZ-s1F" firstAttribute="leading" secondItem="YAh-ac-EfI" secondAttribute="leading" constant="16" id="UHH-f0-RbU"/>
@@ -175,6 +180,9 @@
                             <constraint firstItem="Fto-a8-WiV" firstAttribute="top" secondItem="92S-tQ-Hch" secondAttribute="bottom" constant="8" id="usS-Iq-fQg"/>
                             <constraint firstItem="B20-SK-mK4" firstAttribute="centerX" secondItem="Ned-vg-W6c" secondAttribute="centerX" id="wNu-pU-GDT"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Dok-jO-oqV" appends="YES" id="yCb-oL-nOs"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Translation" id="XHb-N2-u5l">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="2ow-Ea-1eN">
@@ -189,10 +197,16 @@
                         <outlet property="currencyTextField" destination="92S-tQ-Hch" id="AB2-VN-f7x"/>
                         <outlet property="finalSymbolLabel" destination="N9u-9C-tGL" id="BMY-au-oVq"/>
                         <outlet property="oneDollarLabel" destination="B20-SK-mK4" id="YID-oM-pcs"/>
-                        <outlet property="resultTextField" destination="Ned-vg-W6c" id="ajH-kw-aLk"/>
+                        <outlet property="resultTextField" destination="0Rm-QZ-s1F" id="2Ha-KA-Ny4"/>
+                        <outlet property="toggleActivityIndicator" destination="TWm-jl-FDc" id="bGN-9A-TKe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="job-Kf-HKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Dok-jO-oqV">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="niS-yI-DZf" id="VmL-rj-5i2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="700" y="606.39810426540282"/>
         </scene>

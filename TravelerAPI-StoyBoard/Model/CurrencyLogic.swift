@@ -13,10 +13,10 @@ final class CurrencyLogic {
     private let apiKey = "gaJkuUOG9lMrds5hLxbVgI6cUklegcvW"
     
     //MARK: Actions
-    func getSymbols(completionHandler: @escaping (Result<Currency, NetworkError>) -> Void ) {
-        let to = "CAD"
+    func getRates(to: String, amount: Double, completionHandler: @escaping (Result<Currency, NetworkError>) -> Void ) {
+        let to = to
         let from = "USD"
-        let amount = String(5000)
+        let amount = amount
         let currencyUrl = "https://api.apilayer.com/fixer/convert?to=\(to)&from=\(from)&amount=\(amount)"
         //let currencyUrl = "https://api.apilayer.com/fixer/convert?to=USD&from=EUR&amount=5"
         guard let url = URL(string: currencyUrl) else {
@@ -29,19 +29,21 @@ final class CurrencyLogic {
         
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
-                completionHandler(.failure(.ErrorNil))
-                return
+            DispatchQueue.main.async {
+                guard let data = data, error == nil else {
+                    completionHandler(.failure(.ErrorNil))
+                    return
+                }
+                guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                    completionHandler(.failure(.StatusCode200))
+                    return
+                }
+                guard let responseJSON = try? JSONDecoder().decode(Currency.self, from: data) else {
+                    completionHandler(.failure(.decoderJSON))
+                    return
+                }
+                completionHandler(.success(responseJSON))
             }
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completionHandler(.failure(.StatusCode200))
-                return
-            }
-            guard let responseJSON = try? JSONDecoder().decode(Currency.self, from: data) else {
-                completionHandler(.failure(.decoderJSON))
-                return
-            }
-            completionHandler(.success(responseJSON))
         }
         task.resume()
     }
